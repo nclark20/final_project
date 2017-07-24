@@ -10,7 +10,7 @@ session_start();
     
     </head>
     <body>
-        <a href = "index.php"><h1>Virtual Travel Agent</h1></a>
+        <a href = "login.php"><h1>Virtual Travel Agent</h1></a>
         <h2>Add a car</h2>
         <?php
             include("dbconnect.php");
@@ -35,6 +35,9 @@ session_start();
 }
 
         ?>
+        <form action="checkout.php" method="post">
+        <input type='submit' name='submit' value='Checkout'>
+        </form>
         
         
     </body>

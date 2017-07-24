@@ -10,7 +10,7 @@ session_start();
     
     </head>
     <body>
-        <a href = "index.php"><h1>Virtual Travel Agent</h1></a>
+        <a href = "login.php"><h1>Virtual Travel Agent</h1></a>
         
         <h2>Parking</h2>
         

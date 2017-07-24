@@ -1,7 +1,43 @@
+body {
+	font-family: futura;
+	margin: 0;
+	padding: 0;
+}
+
 img {
     width: 200px;
     height: 200px;
 }
-.selection01{
-    text-align: center;
+.head {
+	border: 1px solid red;
+	background-color: lightblue;
+}
+
+.selection01 {
+    float: left; 
+    padding-left: 25%; 
+    
+}
+.selection02 {
+	float: right;
+	padding-right: 25%;
+}
+
+.selection03 {
+	text-align: center; 	
+	clear: right;
+}
+
+.main {
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+	text-decoration: none;
+
+}
+
+a {
+	text-decoration: none;
 }

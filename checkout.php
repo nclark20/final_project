@@ -10,7 +10,7 @@ session_start();
     
     </head>
     <body>
-        <a href = "index.php"><h1>Virtual Travel Agent</h1></a>
+        <a href = "login.php"><h1>Virtual Travel Agent</h1></a>
         <h2>Checkout</h2>
         
         
@@ -25,9 +25,10 @@ session_start();
        $flight_price = $row['flight']*300;
        $car_price = $row['car']*30;
        $park_price = $row['parking']*10;
+        $total = $flight_price+$car_price+$park_price;
            
         echo "<br>User: ". $row["username"]. " has ". $row["flight"] . " flight(s) and  " . $row["car"] . " car(s) and " . $row["parking"] . " parking." ;
-        echo "<p>Total cost: " . $flight_price . " + " . $car_price = $row['car']*30; . " + " . $park_price . "=" .  $flight_price + $car_price + $park_price;
+        echo "<p>Total cost: $" . $total;
         
         
     }
