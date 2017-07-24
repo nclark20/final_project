@@ -2,11 +2,6 @@ img {
     width: 200px;
     height: 200px;
 }
-#first_row{
-    display: inline-block;
-}
-.selection01 {
+.selection01{
     text-align: center;
-    margin:0 auto;   
-    
 }

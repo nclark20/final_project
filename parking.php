@@ -12,20 +12,19 @@ session_start();
     <body>
         <a href = "index.php"><h1>Virtual Travel Agent</h1></a>
         
-        <h2>Flights</h2>
+        <h2>Parking</h2>
         
- <?php
-        
+         <?php
         echo "Signed in as: " . $_SESSION['user'];
     include("dbconnect.php");
-$sql = "SELECT flight_num, origin, destination, seats, price FROM flights";
+$sql = "SELECT spacenum, type, price FROM parking";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br>Flight #: ". $row["flight_num"]. " ". $row["origin"]. "--> " . $row["destination"] . " Price: $". $row["price"] . " Available seats: " . $row["seats"] . " ";
-        echo "<form method='post' action='addFlight.php'>";
+        echo "<br>Parking #: ". $row["spacenum"]. " ". $row["type"]. " price: $" . $row["price"];
+        echo "<form method='post' action='addPark.php'>";
         echo "<input type ='submit' name='submit' value='Add to cart'>";
         echo "</form>";
         echo "<br>";
@@ -35,8 +34,6 @@ if ($result->num_rows > 0) {
 }
 
 $conn->close();
-?> 
-        
-    
+?>
     </body>
 </html>
