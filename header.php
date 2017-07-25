@@ -6,7 +6,7 @@
         <li><a href="flight.php" class = "headr01">Flights</a></li>
         <li><a href="car.php" class = "headr01">Cars</a></li>
         <li><a href="parking.php" class = "headr01">Parking</a></li>
-        <li><a href="checkout.php" class = "headr01">Checkout</a></li>
+        <li><a href="checkout.php" class = "headr01">Cart</a></li>
         </ul>
             
 </div> 

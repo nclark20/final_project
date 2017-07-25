@@ -17,7 +17,7 @@ session_start();
 ?>
 
         
-    <form>
+<form method="post" action="adduser.php">
   Create Username:<br>
   <input type="text" name="username1">
   <br><br>
@@ -28,25 +28,7 @@ session_start();
 </form>
         
         
-        <?php
-require('dbconnect.php');
-    // If the values are posted, insert them into the database.
-    if (isset($_POST['username1']) && isset($_POST['password1'])){
-        $username = $_POST['username1'];
-        
 
-        
-        $password = $_POST['password1'];
-        
-        $query = "INSERT INTO `user` (username, password) VALUES ('$username', '$password')";
-        $result = mysqli_query($conn, $query);
-        if($result){
-            $smsg = "User Created Successfully.";
-        }else{
-            $fmsg ="User Registration Failed";
-        }
-    }
-    ?>
         
         
     </body>

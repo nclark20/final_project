@@ -15,11 +15,17 @@ session_start();
         <?php 
             include("header.php");
         ?>
-        
+                 <div class = "for_h_php">
+                <?php
+                echo "Signed in as: " . $_SESSION['user'] . " "; 
+                if($_SESSION['user'] == 'admin'){
+                    echo "<a href='http://localhost:8888/phpMyAdmin/db_structure.php?server=1&db=travel1&token=385faa9bb7b7e6f7a45f5ebb1b3d7bd9'><button>Admin</button></a>";
+                }  
+                ?>
+        </div>
         <h2>Car Rental</h2>
         
          <?php
-        echo "Signed in as: " . $_SESSION['user'];
     include("dbconnect.php");
 $sql = "SELECT carnum, type, location, dailyprice FROM cars";
 $result = $conn->query($sql);

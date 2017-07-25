@@ -13,14 +13,22 @@ session_start();
         <!--<a href = "login.php"><h1>Virtual Travel Agent</h1></a>-->
         
         <?php 
-            include("header.php");
-        ?>
+            include("header.php");?>
+            
+            <div class = "for_h_php">
+                <?php
+                                echo "Signed in as: " . $_SESSION['user'] . " "; 
+                if($_SESSION['user'] == 'admin'){
+                    echo "<a href='http://localhost:8888/phpMyAdmin/db_structure.php?server=1&db=travel1&token=385faa9bb7b7e6f7a45f5ebb1b3d7bd9'><button>Admin</button></a>";
+                }  
+                ?>
+            </div> 
+       
         
         <h2 class = "flight_page">Flights</h2>
        
  <?php
         
-        echo "Signed in as: " . $_SESSION['user'];
         
     include("dbconnect.php");
 $sql = "SELECT flight_num, origin, destination, seats, price FROM flights";

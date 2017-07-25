@@ -74,8 +74,6 @@ ul {
     list-style-type: none;
     padding: 20px;
     color: white;
-  
-   
 }
 
 li {
@@ -94,6 +92,7 @@ li.headr {
 
 a.headr01 {
     color: white;
+    padding-bottom: 10px;
 }
 /*.head {
 	border: 1px solid red;
