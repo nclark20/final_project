@@ -9,14 +9,19 @@ session_start();
         <link href="style.css" rel="stylesheet" type="text/css" />
     
     </head>
-    <body>
-        <a href = "index.php"><h1>Virtual Travel Agent</h1></a>
+    <body class = "zero_index">
+        <!--<a href = "login.php"><h1>Virtual Travel Agent</h1></a>-->
         
-        <h2>Flights</h2>
+        <?php 
+            include("header.php");
+        ?>
         
+        <h2 class = "flight_page">Flights</h2>
+       
  <?php
         
         echo "Signed in as: " . $_SESSION['user'];
+        
     include("dbconnect.php");
 $sql = "SELECT flight_num, origin, destination, seats, price FROM flights";
 $result = $conn->query($sql);

@@ -1,43 +1,232 @@
-body {
-	font-family: futura;
+body.zero_index {
+	/*font-family: futura; */
 	margin: 0;
 	padding: 0;
+    background-color: #C2C2C2;
+    /*background: linear-gradient(to bottom right, #C2C2C2, white);*/
 }
 
+
+body.for_login {
+    background-image: url(fly02.png);
+    background-size: cover;
+}
+
+body.for_flight {
+    background-image: url(fly02.png);
+    background-size: cover;
+}
+
+body.for_parking {
+    background-image: url();
+    background-size: cover;
+}
+form.log {
+    display: block;
+    text-align: center;
+    padding-top: 200px;
+    
+    font-size: 20px;
+    font-family: futura;
+    
+}
+
+form.log_2 {
+    display: block;
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+    font-size: 20px;
+    font-family: futura;
+    
+}
+
+
+input.log02 {
+    width: 200px;
+    height: 15px;
+    border-radius: 5px;
+    font-size: 15px;  
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.for_sub {
+    
+    width: 70px;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #2B4F81;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+
+.for_sub:hover {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
 img {
     width: 200px;
     height: 200px;
 }
-.head {
-	border: 1px solid red;
-	background-color: lightblue;
+ul {
+    list-style-type: none;
+    padding: 20px;
+    color: white;
+  
+   
 }
 
-.selection01 {
-    float: left; 
-    padding-left: 25%; 
+li {
+    display: inline;
+    padding-right: 3px;
     
 }
-.selection02 {
-	float: right;
-	padding-right: 25%;
+
+
+li.headr {
+    font-size: 40px;
+    
+    padding-right: 400px;
+    
 }
 
-.selection03 {
-	text-align: center; 	
-	clear: right;
+a.headr01 {
+    color: white;
+}
+/*.head {
+	border: 1px solid red;
+	background-color: lightblue;
+}*/
+
+div.for_header {
+    /*background-color: #2B4F81;*/
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: futura;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    background: linear-gradient(to bottom right, #2B4F81, grey);
 }
 
-.main {
-	text-align: center;
+h1.header {
+    font-size: 35px;
+    text-align: left;
+    padding: 10px;
+    padding-left: 20px;
+    color:white;
+    
 }
 
-h1{
-	text-align: center;
-	text-decoration: none;
+a.for_header_link {
+    text-decoration: none;
+    color: white;
+    
+}
 
+div.for_h_php {
+    text-align: right;
+    margin-right: 50px;
+    padding-bottom: 10px;
+    
+}
+/*This is for the image links */
+
+.for_index_page_flight {
+    background-color: red;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(plane_01.png);
+    background-size: cover;
+    height: 200px;  
+}
+
+a.for_links {
+    text-decoration: none;
+    color: white;
+}
+a.for_links:hover {
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* for the flight */
+p.for_p {
+    background-image: url(plane_01.png);
+    background-size: cover;
+    height: 160px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -.5px;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    font-family: futura;
+    
+}
+
+p.for_p:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+/*for the car*/
+p.for_p01 {
+    background-image: url(car_03.png);
+    background-size: cover;
+    height: 160px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -50px;
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    font-family: futura;
+    
+}
+
+p.for_p01:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+/* for the parking */
+p.for_p02 {
+    background-image: url(park_01.png);
+    background-size: cover;
+    height: 160px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -50px;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    font-family: futura;
+    
+}
+
+p.for_p02:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+h2.for_index_page_flight_header {
+    font-size: 70px;
+    color: white;   
+    
+}
+
+
+h2.flight_page {
+    font-size: 40px;
+    font-family: futura;
+    padding-left: 40px;
 }
 
 a {
+    
 	text-decoration: none;
 }

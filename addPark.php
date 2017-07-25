@@ -9,8 +9,11 @@ session_start();
         <link href="style.css" rel="stylesheet" type="text/css" />
     
     </head>
-    <body>
-        <a href = "login.php"><h1>Virtual Travel Agent</h1></a>
+    <body class = "zero_index">
+        <!--<a href = "login.php"><h1>Virtual Travel Agent</h1></a>-->
+        <?php
+            include("header.php");
+        ?>
         <h2>Add a parking spot</h2>
         <?php
             include("dbconnect.php");
